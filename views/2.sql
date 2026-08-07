@@ -1,0 +1,1 @@
+SELECT average_color 
