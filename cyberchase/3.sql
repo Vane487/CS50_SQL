@@ -1,3 +1,2 @@
-SELECT production_code
-FROM episodes 
- WHERE title = "Hackerized!"; 
+
+SELECT production_code FROM episodes WHERE title = 'Hackerized!';
