@@ -1,1 +1,2 @@
-SELECT japanese_title, english_title;
+SELECT japanese_title, english_title
+FROM id;
