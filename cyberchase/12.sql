@@ -1,1 +1,2 @@
-SELECT СOUNT(DISTINCT title) FROM episodes;
+
+SELECT COUNT(DISTINCT title) FROM episodes;
