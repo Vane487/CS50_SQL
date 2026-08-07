@@ -1,1 +1,1 @@
-SELECT (DISTINCT title) FROM episodes;
+SELECT СOUNT (DISTINCT title) FROM episodes;
