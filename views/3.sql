@@ -1,6 +1,4 @@
- count how many prints by Hokusai include “Fuji” in the English title.
- Though all of Hokusai’s prints focused on Mt. Fuji,
- in how many did “Fuji” make it into the title?
-SELECT COUNT()
+
+SELECT COUNT(*)
 FROM views
-WHERE author = 'Hokusai' AND english_title LIKE '%Fuji%';
+WHERE artist = 'Hokusai' AND english_title LIKE '%Fuji%';
