@@ -2,3 +2,5 @@
  Though all of Hokusai’s prints focused on Mt. Fuji,
  in how many did “Fuji” make it into the title?
 SELECT COUNT()
+FROM views
+WHERE author = 'Hok
