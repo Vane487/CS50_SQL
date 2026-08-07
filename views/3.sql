@@ -3,4 +3,4 @@
  in how many did “Fuji” make it into the title?
 SELECT COUNT()
 FROM views
-WHERE author = 'Hok
+WHERE author = 'Hokusai' AND english_title LIKE '%Fuji%';
