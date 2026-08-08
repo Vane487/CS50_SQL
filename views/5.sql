@@ -1,4 +1,4 @@
 
 SELECT MAX(contrast) AS "Maximum Contrast"
 FROM views
-WHERE artist = 'Hosukai';
+WHERE artist = 'Hokusai';
