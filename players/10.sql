@@ -1,7 +1,8 @@
 
 
 
-SELECT ROUND(AVG(weight),2) AS "Average weight" AND first_name, last_name AS "Player"
+SELECT birth_state, ROUND(AVG(weight), 2) AS "Average Weight"
 FROM players
-WHERE birth_state != 'PA'
-ORDER BY debut DESC;
+WHERE birth_state != 'PA' AND weight IS NOT NULL
+GROUP BY birth_state
+ORDER BY "Average Weight" DESC;
