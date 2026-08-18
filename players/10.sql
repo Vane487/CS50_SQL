@@ -4,6 +4,6 @@ Involve at least condition, using WHERE
 Sort by at least one column using ORDER BY
 
 
-SELECT first_name, last_name AS "Player"
+SELECT ROUND(AVG(weight),2) AS "Average weight" AND first_name, last_name AS "Player"
 FROM players
 WHERE 
