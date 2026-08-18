@@ -5,4 +5,4 @@ a SQL query to find the average height and weight,
   Return the columns with the name “Average Height” and “Average Weight”, respectively.
 SELECT ROUND(AVG(height), 2) AS 'AVERAGE HEIGHT',
        ROUND(AVG(weight), 2) AS 'AVERAGE WEIGHT'
-WHERE debut >= '
+WHERE debut >= '2001-01-01';
