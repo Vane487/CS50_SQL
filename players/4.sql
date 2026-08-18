@@ -3,5 +3,5 @@ In 4.sql, write a SQL query to find the first
 Sort the results alphabetically by first name, then by last name.
 SELECT first_name, last_name
 FROM players
-WHERE birth_country IS NOT 'United States'
-ORDER BY first_name, last_name DESC;
+WHERE birth_country != 'USA'
+ORDER BY first_name, last_name;
