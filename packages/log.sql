@@ -45,5 +45,7 @@ AND to_address_id = (
 WHO HAS THE GIFT
 
 SELECT name FROM drivers
-WHERE id = ( SELECT driver_id FROM scans  )
+WHERE id = ( SELECT driver_id
+       FROM scans
+       WHERE package_id)
 
