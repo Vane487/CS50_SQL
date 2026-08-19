@@ -19,15 +19,16 @@ WHERE id = (
 -- Finding out the contents of the box ---
 SELECT contents FROM packages WHERE from_address_id IS NULL;
 
--- Finding out the address it ended up at  --
-
-SELECT type FROM addresses
-WHERE id = ( SELECT address_id FROM scans
-            WHERE actions = 'Drop' AND package_id = (
-                SELECT id FROM packages WHERE from_address_id IS NULL)
-            );
-
-)
+SELECT address, type FROM addresses
+WHERE id = (
+    SELECT address_id FROM scans
+    WHERE action = 'Drop' AND package_id = (
+        SELECT id FROM packages WHERE from_address_id IS NULL
+    )
+);
 
 -- *** The Forgotten Gift ***
 
+ from my home at 109 Tileston Street.
+  to my wonderful granddaughter, off at 728 Maple Place.
+  
