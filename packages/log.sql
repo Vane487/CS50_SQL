@@ -32,4 +32,5 @@ WHERE id = (
  from my home at 109 Tileston Street.
   to my wonderful granddaughter, off at 728 Maple Place.
 
-SELECT contents FROM packages 
+SELECT contents FROM packages
+WHERE id = ( SELECT )
