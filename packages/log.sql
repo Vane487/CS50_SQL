@@ -29,8 +29,7 @@ WHERE id = (
 
 -- *** The Forgotten Gift ***
 
- from my home at 109 Tileston Street.
-  to my wonderful granddaughter, off at 728 Maple Place.
+-- FInding the contents --
 
 SELECT contents FROM packages
 WHERE from_address_id =
@@ -41,5 +40,7 @@ AND to_address_id = (
                      SELECT id FROM addresses WHERE
                      address = '728 Maple Place'
 );
+
+
 
 
