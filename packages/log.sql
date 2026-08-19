@@ -4,7 +4,9 @@ At what type of address did the Lost Letter end up?:
 At what address did the Lost Letter end up?:
 
 SELECT address, type FROM addresses
-WHERE address_id
+WHERE id =
+        ( SELECT address_id FROM scans
+        WHERE 
 
 
 -- *** The Devious Delivery ***
