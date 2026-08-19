@@ -23,7 +23,9 @@ SELECT contents FROM packages WHERE from_address_id IS NULL;
 
 At what type of address did the Devious Delivery end up?:
 SELECT type FROM addresses
+WHERE id = ( SELECT address_id FROM scans 
 
+)
 
 -- *** The Forgotten Gift ***
 
