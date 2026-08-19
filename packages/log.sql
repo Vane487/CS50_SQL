@@ -33,4 +33,11 @@ WHERE id = (
   to my wonderful granddaughter, off at 728 Maple Place.
 
 SELECT contents FROM packages
-WHERE from_address_id = ( SELECT )
+WHERE from_address_id =
+                      ( SELECT id
+                      FROM addresses
+                      WHERE address = '109 Tileston Street' )
+AND to_address_id = (
+                     SELECT id FROM packages WHERE
+                     address = '728 Maple Place'
+);
