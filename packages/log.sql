@@ -21,9 +21,11 @@ SELECT contents FROM packages WHERE from_address_id IS NULL;
 
 -- Finding out the address it ended up at  --
 
-At what type of address did the Devious Delivery end up?:
 SELECT type FROM addresses
-WHERE id = ( SELECT address_id FROM scans 
+WHERE id = ( SELECT address_id FROM scans
+            WHERE actions = 'Drop' AND package_id = (
+                SELECT id FROM packages WHERE from_address_id IS NULL)
+            );
 
 )
 
