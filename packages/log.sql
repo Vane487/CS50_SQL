@@ -38,6 +38,8 @@ WHERE from_address_id =
                       FROM addresses
                       WHERE address = '109 Tileston Street' )
 AND to_address_id = (
-                     SELECT id FROM packages WHERE
+                     SELECT id FROM addresses WHERE
                      address = '728 Maple Place'
 );
+
+
