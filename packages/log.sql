@@ -1,7 +1,6 @@
 
--- *** The Lost Letter ***  live over at 900 Somerville Avenue
-At what type of address did the Lost Letter end up?:
-At what address did the Lost Letter end up?:
+-- *** The Lost Letter ***
+
 
 SELECT address, type FROM addresses
 WHERE id = (
@@ -42,7 +41,7 @@ AND to_address_id = (
 );
 
 
--- WHO HAS THE GIFT -- 
+-- WHO HAS THE GIFT --
 
 SELECT name FROM drivers
 WHERE id = (
