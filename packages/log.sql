@@ -16,6 +16,6 @@ WHERE id = (
 
 
 -- *** The Devious Delivery ***
-
+SELECT type, contents FROM 
 -- *** The Forgotten Gift ***
 
