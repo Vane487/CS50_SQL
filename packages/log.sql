@@ -6,7 +6,7 @@ At what address did the Lost Letter end up?:
 SELECT address, type FROM addresses
 WHERE id =
         ( SELECT address_id FROM scans
-        WHERE 
+        WHERE action = 'Drop' AND 
 
 
 -- *** The Devious Delivery ***
