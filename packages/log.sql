@@ -1,6 +1,7 @@
 
 -- *** The Lost Letter ***  live over at 900 Somerville Avenue
-SELECT 
+SELECT contents FROM packages
+WHERE 
 
 -- *** The Devious Delivery ***
 
